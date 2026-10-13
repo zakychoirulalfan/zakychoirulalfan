@@ -1,0 +1,50 @@
+name: Generate activity graph
+
+on:
+  schedule: # execute every 12 hours
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: generate activity-graph.svg
+        uses: Ashutosh00710/github-readme-activity-graph@v1.1.1
+        with:
+          username: ${{ github.repository_owner }}
+          theme: react-dark
+          area: true
+          hide_border: false
+          radius: 16
+
+      - name: Move generated SVG to dist
+        run: |
+          mkdir -p dist
+          mv github-contribution-grid-snake*.svg dist/ 2>/dev/null || true
+          # activity-graph action outputs to root, rename it
+          if [ -f "output/github-contribution-grid-snake.svg" ]; then
+            cp output/github-contribution-grid-snake.svg dist/activity-graph.svg
+          fi
+          # Fallback: create from the action output directory if exists
+          find . -name "*.svg" -not -path "./.git/*" | head -5
+
+      - name: push activity-graph.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: activity-graph-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
