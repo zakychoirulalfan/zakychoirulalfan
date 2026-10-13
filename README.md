@@ -30,7 +30,13 @@
   <img src="https://raw.githubusercontent.com/zakychoirulalfan/zakychoirulalfan/activity-graph-output/activity-graph.svg" height="300" alt="activity graph" />
 </div>
 
-###
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=zakychoirulalfan&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
+### github profil readme
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zakychoirulalfan/zakychoirulalfan/pacman-output/pacman-contribution-graph-dark.svg">
