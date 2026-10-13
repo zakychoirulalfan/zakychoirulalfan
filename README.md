@@ -19,10 +19,8 @@
 </div>
 
 ## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=zakychoirulalfan&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/zakychoirulalfan/zakychoirulalfan/trophy-output/trophy.svg" height="150" alt="trophy graph" />
-</div>
 
 ## 📈 Activity Graph
 
