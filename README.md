@@ -1,7 +1,7 @@
-# 💫 About Me:
-## Hi i'm Zaky Choirul Alfan 👋<br>i from indonesian
 
-![Zakychoirulalfan](img/github-header-banner.png)
+![zakychoirulalfan](img/github-header-banner.png)
+### 💫 About Me:
+#### Hi i'm Zaky Choirul Alfan 👋<br>i from indonesian
 
 
 ## 🌐 Socials:
